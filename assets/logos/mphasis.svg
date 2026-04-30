@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" role="img" aria-labelledby="title">
+  <title id="title">Mphasis</title>
+  <rect width="240" height="80" rx="18" fill="#ffffff"/>
+  <path d="M30 53V27h8l12 15 12-15h8v26h-9V40L50 53 39 40v13h-9Z" fill="#ee3f34"/>
+  <text x="82" y="49" fill="#202124" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Mphasis</text>
+</svg>

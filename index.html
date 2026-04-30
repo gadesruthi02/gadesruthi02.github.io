@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio description">
-    <meta name="keywords" content="portfolio, developer, designer">
-    <meta name="author" content="Your Name">
-    <title>Portfolio - Your Name</title>
+    <meta name="description" content="Sruthi Gade - Business Data Analyst portfolio">
+    <meta name="keywords" content="Sruthi Gade, business data analyst, SQL, Python, Power BI, Tableau, healthcare analytics">
+    <meta name="author" content="Sruthi Gade">
+    <meta name="theme-color" content="#101820">
+    <title>Sruthi Gade | Business Data Analyst</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101820'/%3E%3Cpath d='M18 43V25h7v18h-7Zm11 0V17h7v26h-7Zm11 0V29h7v14h-7Z' fill='%232FC4B2'/%3E%3C/svg%3E">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,14 +23,14 @@
 </head>
 <body>
     <!-- Particle Background -->
-    <div id="particles-js"></div>
+    <div id="particles-js" aria-hidden="true"></div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="#home" class="nav-brand" id="nav-brand"></a>
-                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <a href="#hero" class="nav-brand" id="nav-brand"></a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -42,29 +43,36 @@
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
         <div class="container">
-            <div class="hero-content">
-                <p class="hero-greeting" id="hero-greeting"></p>
-                <h1 class="hero-name" id="hero-name"></h1>
-                <h2 class="hero-title" id="hero-title"></h2>
-                <p class="hero-tagline" id="hero-tagline"></p>
-                <p class="hero-summary" id="hero-summary"></p>
+            <div class="hero-content hero-layout">
+                <div class="hero-copy">
+                    <p class="hero-greeting" id="hero-greeting"></p>
+                    <h1 class="hero-name" id="hero-name"></h1>
+                    <h2 class="hero-title" id="hero-title"></h2>
+                    <p class="hero-tagline" id="hero-tagline"></p>
+                    <p class="hero-summary" id="hero-summary"></p>
 
-                <div class="hero-highlights" id="hero-highlights"></div>
+                    <div class="hero-cta" id="hero-cta"></div>
 
-                <div class="hero-cta" id="hero-cta"></div>
+                    <div class="hero-social" id="hero-social"></div>
+                </div>
 
-                <div class="hero-social" id="hero-social"></div>
-
-                <div class="scroll-indicator" id="scroll-indicator">
-                    <span>Scroll to explore</span>
-                    <i class="fas fa-chevron-down"></i>
+                <div class="hero-visual" aria-label="Portrait of Sruthi Gade">
+                    <div class="portrait-frame">
+                        <img src="assets/images/sruthi-gade-portrait.jpg" alt="Sruthi Gade standing in a hallway with international flags">
+                    </div>
+                    <div class="hero-proof">
+                        <span class="proof-kicker">Analytics Focus</span>
+                        <strong>Healthcare data, KPI reporting, and decision support</strong>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-decoration">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
+
+            <div class="hero-highlights" id="hero-highlights"></div>
+
+            <div class="scroll-indicator" id="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
     </section>
 
@@ -72,6 +80,7 @@
     <section id="about" class="about-section section">
         <div class="container">
             <h2 class="section-title" id="about-title">About Me</h2>
+            <p class="section-subtitle" id="about-subtitle"></p>
             <div class="about-content">
                 <div class="about-text" id="about-text"></div>
                 <div class="about-stats" id="about-stats"></div>
@@ -84,6 +93,7 @@
     <section id="experience" class="experience-section section">
         <div class="container">
             <h2 class="section-title" id="experience-title">Work Experience</h2>
+            <p class="section-subtitle" id="experience-subtitle"></p>
             <div class="timeline" id="experience-timeline"></div>
         </div>
     </section>
@@ -92,6 +102,7 @@
     <section id="skills" class="skills-section section">
         <div class="container">
             <h2 class="section-title" id="skills-title">Skills & Technologies</h2>
+            <p class="section-subtitle" id="skills-subtitle"></p>
             <div class="skills-grid" id="skills-grid"></div>
         </div>
     </section>
@@ -100,6 +111,7 @@
     <section id="projects" class="projects-section section">
         <div class="container">
             <h2 class="section-title" id="projects-title">Featured Projects</h2>
+            <p class="section-subtitle" id="projects-subtitle"></p>
             <div class="projects-grid" id="projects-grid"></div>
         </div>
     </section>
@@ -108,6 +120,7 @@
     <section id="education" class="education-section section">
         <div class="container">
             <h2 class="section-title" id="education-title">Education</h2>
+            <p class="section-subtitle" id="education-subtitle"></p>
             <div class="education-grid" id="education-grid"></div>
 
             <h3 class="subsection-title" id="certifications-title">Certifications & Awards</h3>

@@ -6,6 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeApp();
 });
 
+function setOptionalText(elementId, text) {
+    const element = document.getElementById(elementId);
+
+    if (!element) {
+        return;
+    }
+
+    if (text) {
+        element.textContent = text;
+        element.style.display = '';
+    } else {
+        element.style.display = 'none';
+    }
+}
+
 // ============================================
 // Initialize Application
 // ============================================
@@ -160,6 +175,7 @@ async function loadAbout() {
 
         // Set section title
         document.getElementById('about-title').textContent = data.sectionTitle;
+        setOptionalText('about-subtitle', data.subtitle);
 
         // Render paragraphs
         const textContainer = document.getElementById('about-text');
@@ -206,6 +222,7 @@ async function loadExperience() {
 
         // Set section title
         document.getElementById('experience-title').textContent = data.sectionTitle;
+        setOptionalText('experience-subtitle', data.subtitle);
 
         // Render timeline
         const timelineContainer = document.getElementById('experience-timeline');
@@ -213,15 +230,25 @@ async function loadExperience() {
             timelineContainer.innerHTML = data.experiences.map(exp => `
                 <div class="timeline-item">
                     <div class="timeline-empty"></div>
-                    <div class="timeline-icon" style="background: ${exp.color}">
-                        <i class="${exp.icon}"></i>
+                    <div class="timeline-icon" style="background: ${exp.color || 'linear-gradient(135deg, #36d4be 0%, #7fb7be 100%)'}">
+                        <i class="${exp.icon || 'fas fa-chart-line'}"></i>
                     </div>
                     <div class="timeline-content">
                         <div class="experience-header">
-                            <h3 class="experience-title">${exp.title}</h3>
-                            <p class="experience-company">
-                                ${exp.company} ${exp.location ? `• ${exp.location}` : ''}
-                            </p>
+                            <div class="experience-brand">
+                                <div class="company-logo" aria-hidden="true">
+                                    ${exp.logo ? `
+                                        <img src="${exp.logo}" alt="" loading="lazy" onerror="this.parentElement.classList.add('logo-fallback'); this.remove();">
+                                    ` : ''}
+                                    <span>${exp.company.split(' ').map(word => word[0]).join('').slice(0, 2)}</span>
+                                </div>
+                                <div>
+                                    <h3 class="experience-title">${exp.title}</h3>
+                                    <p class="experience-company">
+                                        ${exp.company} ${exp.location ? `• ${exp.location}` : ''}
+                                    </p>
+                                </div>
+                            </div>
                             <p class="experience-period">
                                 <i class="fas fa-calendar-alt"></i>
                                 ${exp.period}
@@ -258,6 +285,7 @@ async function loadSkills() {
 
         // Set section title
         document.getElementById('skills-title').textContent = data.sectionTitle;
+        setOptionalText('skills-subtitle', data.subtitle);
 
         // Render skill categories
         const skillsGrid = document.getElementById('skills-grid');
@@ -291,16 +319,21 @@ async function loadProjects() {
 
         // Set section title
         document.getElementById('projects-title').textContent = data.sectionTitle;
+        setOptionalText('projects-subtitle', data.subtitle);
 
         // Render projects
         const projectsGrid = document.getElementById('projects-grid');
         if (projectsGrid && data.projects) {
-            projectsGrid.innerHTML = data.projects.map(project => `
-                <div class="project-card">
-                    <div class="project-icon" style="background: ${project.color}">
-                        <i class="${project.icon}"></i>
+            projectsGrid.innerHTML = data.projects.map((project, index) => `
+                <div class="project-card" style="--project-color: ${project.color}">
+                    <div class="project-visual">
+                        <div class="project-icon" style="background: ${project.color}">
+                            <i class="${project.icon}"></i>
+                        </div>
+                        <span class="project-number">${String(index + 1).padStart(2, '0')}</span>
                     </div>
                     <div class="project-header">
+                        ${project.category ? `<span class="project-category">${project.category}</span>` : ''}
                         <h3 class="project-title">${project.title}</h3>
                     </div>
                     <p class="project-description">${project.description}</p>
@@ -353,6 +386,7 @@ async function loadEducation() {
 
         // Set section title
         document.getElementById('education-title').textContent = data.sectionTitle;
+        setOptionalText('education-subtitle', data.subtitle);
 
         // Render education items
         const educationGrid = document.getElementById('education-grid');
@@ -376,7 +410,11 @@ async function loadEducation() {
         }
 
         // Set certifications title
-        document.getElementById('certifications-title').textContent = data.certificationsTitle;
+        const certificationsTitle = document.getElementById('certifications-title');
+        if (certificationsTitle) {
+            certificationsTitle.textContent = data.certificationsTitle;
+            certificationsTitle.style.display = data.certifications && data.certifications.length ? '' : 'none';
+        }
 
         // Render certifications
         const certificationsGrid = document.getElementById('certifications-grid');
@@ -468,12 +506,28 @@ async function loadContact() {
                 e.preventDefault();
                 const formMessage = contactForm.querySelector('.form-message');
                 const submitButton = contactForm.querySelector('.form-submit');
+                const formData = new FormData(contactForm);
+
+                if (!contactForm.action || contactForm.getAttribute('action') === '#') {
+                    const subject = encodeURIComponent(formData.get('subject') || 'Portfolio inquiry');
+                    const body = encodeURIComponent(
+                        `Name: ${formData.get('name') || ''}\n` +
+                        `Email: ${formData.get('email') || ''}\n\n` +
+                        `${formData.get('message') || ''}`
+                    );
+
+                    window.location.href = `mailto:gade.sruhthi02@gmail.com?subject=${subject}&body=${body}`;
+                    formMessage.textContent = data.form.successMessage;
+                    formMessage.className = 'form-message success';
+                    formMessage.style.display = 'block';
+                    contactForm.reset();
+                    return;
+                }
 
                 try {
                     submitButton.disabled = true;
                     submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
-                    const formData = new FormData(contactForm);
                     const response = await fetch(contactForm.action, {
                         method: contactForm.method,
                         body: formData,
@@ -566,9 +620,11 @@ function initializeNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
 
     // Mobile menu toggle
-    if (navToggle) {
+    if (navToggle && navMenu) {
         navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
+            const isOpen = navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active', isOpen);
+            navToggle.setAttribute('aria-expanded', String(isOpen));
         });
     }
 
@@ -576,6 +632,8 @@ function initializeNavigation() {
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
         });
     });
 
@@ -594,6 +652,15 @@ function initializeNavigation() {
                 });
             }
         });
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.focus();
+        }
     });
 }
 
@@ -683,18 +750,18 @@ function initializeBackToTop() {
 // Initialize Particles Background
 // ============================================
 function initializeParticles() {
-    if (typeof particlesJS !== 'undefined') {
+    if (typeof particlesJS !== 'undefined' && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         particlesJS('particles-js', {
             particles: {
                 number: {
-                    value: 80,
+                    value: 48,
                     density: {
                         enable: true,
                         value_area: 800
                     }
                 },
                 color: {
-                    value: ['#667eea', '#764ba2', '#f093fb']
+                    value: ['#2FC4B2', '#6DAEDB', '#F2C14E']
                 },
                 shape: {
                     type: 'circle'
@@ -722,13 +789,13 @@ function initializeParticles() {
                 line_linked: {
                     enable: true,
                     distance: 150,
-                    color: '#667eea',
-                    opacity: 0.2,
+                    color: '#2FC4B2',
+                    opacity: 0.16,
                     width: 1
                 },
                 move: {
                     enable: true,
-                    speed: 2,
+                    speed: 1.4,
                     direction: 'none',
                     random: false,
                     straight: false,

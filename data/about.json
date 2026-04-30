@@ -1,40 +1,41 @@
 {
   "_instructions": "About section.",
-  "sectionTitle": "About Me",
-  "image": "assets/images/profile.jpg",
+  "sectionTitle": "About",
+  "subtitle": "A business-first analyst profile built around clarity, measurable impact, and reliable reporting systems.",
+  "image": "assets/images/sruthi-gade-portrait.jpg",
   "paragraphs": [
-    "Business Data Analyst with 3+ years of experience translating complex business requirements into actionable, data-driven insights across healthcare and enterprise consulting environments. Strong expertise in SQL, Python, Power BI, Tableau, and cloud-based analytics platforms, with proven ability to improve operational efficiency, reduce costs, and support executive decision-making.",
-    "Adept at stakeholder management, KPI design, data modeling, predictive analysis, and end-to-end analytics delivery within Agile and regulated environments. Consistently delivered measurable business impact through advanced analytics, automation, and scalable reporting solutions."
+    "I specialize in turning fragmented business questions into structured analysis, reliable reporting, and decision-ready insights. My experience spans healthcare analytics, enterprise consulting, KPI design, data validation, and dashboard delivery.",
+    "I work comfortably between technical teams and business stakeholders: gathering requirements, modeling data, building Power BI and Tableau reporting, automating recurring workflows, and explaining the story behind the numbers in clear language."
   ],
   "statistics": [
     {
       "icon": "fas fa-project-diagram",
-      "value": "5+",
-      "label": "Projects Completed",
+      "value": "35%",
+      "label": "Decision-Making Lift",
       "color": "#FF6B6B"
     },
     {
       "icon": "fas fa-briefcase",
-      "value": "1+",
-      "label": "Years Experience",
+      "value": "18%",
+      "label": "Avoidable Admission Reduction",
       "color": "#4ECDC4"
     },
     {
       "icon": "fas fa-code",
-      "value": "34+",
-      "label": "Technologies",
+      "value": "25%",
+      "label": "Faster Decision Turnaround",
       "color": "#FFE66D"
     },
     {
       "icon": "fas fa-award",
-      "value": "0+",
-      "label": "Certifications",
+      "value": "15%",
+      "label": "Operational Cost Reduction",
       "color": "#A8DADC"
     }
   ],
   "downloadCV": {
-    "text": "Download Resume",
-    "href": "assets/files/resume.pdf",
+    "text": "Request Resume",
+    "href": "mailto:gade.sruhthi02@gmail.com?subject=Resume%20request%20for%20Sruthi%20Gade",
     "icon": "fas fa-download"
   }
 }

@@ -2,7 +2,7 @@
   "_instructions": "Configure your navigation menu.",
   "brand": {
     "name": "Sruthi Gade",
-    "href": "#home"
+    "href": "#hero"
   },
   "menuItems": [
     {

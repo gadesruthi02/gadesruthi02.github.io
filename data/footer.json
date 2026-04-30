@@ -5,18 +5,23 @@
     "year": "2026",
     "name": "Sruthi Gade"
   },
-  "tagline": "Crafted with passion and dedication",
+  "tagline": "Business data analysis, reporting, and decision support.",
   "links": [
     {
-      "text": "Privacy Policy",
-      "href": "#privacy"
+      "text": "Email",
+      "href": "mailto:gade.sruhthi02@gmail.com"
     },
     {
-      "text": "Terms of Service",
-      "href": "#terms"
+      "text": "GitHub",
+      "href": "https://github.com/gadesruthi02"
     }
   ],
   "socialLinks": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/gadesruthi02",
+      "icon": "fab fa-github"
+    },
     {
       "platform": "Email",
       "url": "mailto:gade.sruhthi02@gmail.com",

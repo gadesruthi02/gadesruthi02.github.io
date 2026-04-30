@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" role="img" aria-labelledby="title">
+  <title id="title">Humana</title>
+  <rect width="240" height="80" rx="18" fill="#ffffff"/>
+  <circle cx="40" cy="40" r="20" fill="#5fb344"/>
+  <path d="M31 39c7-14 24-14 32 0-7 15-25 15-32 0Z" fill="#ffffff" opacity=".95"/>
+  <text x="76" y="49" fill="#4a8f34" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Humana</text>
+</svg>

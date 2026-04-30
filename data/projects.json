@@ -1,14 +1,18 @@
 {
   "_instructions": "Add your projects.",
-  "sectionTitle": "Featured Work",
+  "sectionTitle": "Selected Projects",
+  "subtitle": "Data engineering and analytics projects that show repeatable pipelines, structured analysis, and business-ready outputs.",
   "projects": [
     {
-      "title": "spark-and-kafka_iot-data-processing-and-analytics",
-      "description": "Comprehensive project exploring software design patterns",
-      "longDescription": "Comprehensive project exploring software design patterns",
-      "category": "Backend Development",
+      "title": "IoT Data Processing & Analytics Pipeline",
+      "description": "A streaming data pipeline using Spark, Kafka, and Python to process IoT event data and prepare it for analytics-ready reporting.",
+      "longDescription": "Spark and Kafka pipeline for ingesting, processing, and analyzing IoT event streams with Python-based data workflows.",
+      "category": "Data Engineering",
       "technologies": [
-        "Python"
+        "Python",
+        "Spark",
+        "Kafka",
+        "Data Pipelines"
       ],
       "icon": "fas fa-project-diagram",
       "color": "#FF6B6B",
@@ -27,12 +31,15 @@
       }
     },
     {
-      "title": "formula-1-racing-data-pipeline",
-      "description": "Full-featured application built as a learning exercise",
-      "longDescription": "Full-featured application built as a learning exercise",
-      "category": "Backend Development",
+      "title": "Formula 1 Racing Data Pipeline",
+      "description": "A data engineering workflow for collecting, transforming, and structuring Formula 1 racing data for trend analysis and reporting.",
+      "longDescription": "Data pipeline project for collecting, transforming, and preparing Formula 1 racing data for analytics and reporting.",
+      "category": "Data Pipeline",
       "technologies": [
-        "Python"
+        "Python",
+        "ETL",
+        "Analytics",
+        "Data Modeling"
       ],
       "icon": "fas fa-project-diagram",
       "color": "#4ECDC4",
@@ -51,10 +58,10 @@
       }
     },
     {
-      "title": "uber-expenses-tracking",
-      "description": "Interactive application built for continuous learning",
-      "longDescription": "Interactive application built for continuous learning",
-      "category": "Backend Development",
+      "title": "Uber Expenses Tracking",
+      "description": "An expense analytics project that cleans and summarizes rideshare spend, making patterns easier to compare and explain.",
+      "longDescription": "Notebook-driven expense analysis project using Python and HTML to clean, explore, and summarize personal rideshare spending patterns.",
+      "category": "Analytics",
       "technologies": [
         "Jupyter Notebook",
         "Python",
@@ -77,12 +84,15 @@
       }
     },
     {
-      "title": "etl-data-pipeline-using-airflow",
-      "description": "Personal project for exploring modern development practices",
-      "longDescription": "Personal project for exploring modern development practices",
-      "category": "Backend Development",
+      "title": "ETL Data Pipeline Using Airflow",
+      "description": "A scheduled ETL workflow built with Airflow to demonstrate repeatable extraction, transformation, orchestration, and data loading.",
+      "longDescription": "Airflow-based ETL workflow that demonstrates scheduled extraction, transformation, orchestration, and repeatable data loading.",
+      "category": "ETL",
       "technologies": [
-        "Python"
+        "Python",
+        "Airflow",
+        "ETL",
+        "Automation"
       ],
       "icon": "fas fa-project-diagram",
       "color": "#A8DADC",
@@ -101,12 +111,15 @@
       }
     },
     {
-      "title": "log-analysis-anomaly-detection",
-      "description": "Practice application demonstrating full-stack development skills",
-      "longDescription": "Practice application demonstrating full-stack development skills",
-      "category": "Backend Development",
+      "title": "Log Analysis & Anomaly Detection",
+      "description": "A Python-based anomaly detection project for parsing logs, surfacing unusual patterns, and supporting faster root-cause analysis.",
+      "longDescription": "Python analytics project for parsing logs, surfacing unusual patterns, and supporting faster root-cause investigation.",
+      "category": "Data Analytics",
       "technologies": [
-        "Python"
+        "Python",
+        "Anomaly Detection",
+        "Log Analysis",
+        "Root Cause Analysis"
       ],
       "icon": "fas fa-project-diagram",
       "color": "#B19CD9",

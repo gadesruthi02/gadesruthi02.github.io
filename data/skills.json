@@ -1,9 +1,10 @@
 {
   "_instructions": "Organize your skills with vibrant colors.",
-  "sectionTitle": "Skills & Technologies",
+  "sectionTitle": "Capabilities",
+  "subtitle": "A focused toolkit for analysis, automation, dashboards, data modeling, and stakeholder-facing business intelligence.",
   "categories": [
     {
-      "category": "Programming Languages",
+      "category": "Analysis Languages",
       "icon": "fas fa-code",
       "color": "#FF6B6B",
       "skills": [
@@ -13,7 +14,7 @@
       ]
     },
     {
-      "category": "Frameworks & Libraries",
+      "category": "Analytics Libraries",
       "icon": "fas fa-toolbox",
       "color": "#4ECDC4",
       "skills": [
@@ -25,7 +26,7 @@
       ]
     },
     {
-      "category": "Tools & Platforms",
+      "category": "Platforms & BI Tools",
       "icon": "fas fa-wrench",
       "color": "#FFE66D",
       "skills": [
@@ -50,7 +51,7 @@
       ]
     },
     {
-      "category": "Technical Skills",
+      "category": "Business Analytics",
       "icon": "fas fa-laptop-code",
       "color": "#A8DADC",
       "skills": [

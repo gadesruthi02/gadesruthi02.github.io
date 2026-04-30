@@ -1,23 +1,35 @@
 {
   "_instructions": "Add your education and certifications here.",
-  "sectionTitle": "Education & Certifications",
+  "sectionTitle": "Education",
+  "subtitle": "Academic foundation in business systems, technical problem-solving, and analytical decision support.",
   "certificationsTitle": "Certifications",
   "education": [
     {
-      "degree": "Master’s",
+      "degree": "Master's Degree",
       "school": "Concordia University Wisconsin",
       "institution": "Concordia University Wisconsin",
       "period": "July 2023 – May 2025",
       "details": "",
-      "description": ""
+      "description": "Graduate study focused on business systems, analytics, and data-informed decision-making.",
+      "icon": "fas fa-graduation-cap",
+      "color": "#2FC4B2",
+      "achievements": [
+        "Applied analytics and reporting concepts to business-focused projects",
+        "Strengthened stakeholder communication and documentation skills"
+      ]
     },
     {
-      "degree": "Bachelor’s",
+      "degree": "Bachelor's Degree",
       "school": "SR engineering college",
       "institution": "SR engineering college",
       "period": "Aug 2018 – May 2022",
       "details": "",
-      "description": ""
+      "description": "Technical foundation in programming, databases, systems thinking, and analytical problem-solving.",
+      "icon": "fas fa-university",
+      "color": "#F2C14E",
+      "achievements": [
+        "Built a strong base in programming, databases, and analytical thinking"
+      ]
     }
   ],
   "certifications": []

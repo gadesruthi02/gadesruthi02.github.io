@@ -1,45 +1,52 @@
 {
   "_instructions": "Hero section content.",
-  "greeting": "Hi, I'm",
+  "greeting": "Portfolio",
   "name": "Sruthi Gade",
-  "title": "BUSINESS DATA ANALYST",
-  "summary": "BUSINESS DATA ANALYST with 1+ years of experience specializing in SQL, Python, R.",
-  "avatarUrl": "/avatar.png",
-  "tagline": "BUSINESS DATA ANALYST",
+  "title": "Business Data Analyst transforming complex data into confident decisions.",
+  "summary": "I build clean analytics workflows, executive dashboards, and KPI systems across healthcare and enterprise data. My work connects SQL, Python, Power BI, Tableau, and stakeholder strategy to make business performance easier to see, explain, and improve.",
+  "avatarUrl": "assets/images/sruthi-gade-portrait.jpg",
+  "tagline": "SQL / Python / Power BI / Tableau / Healthcare Analytics",
   "highlights": [
     {
       "icon": "fas fa-briefcase",
-      "text": "1+ Years Experience",
+      "text": "3+ Years in Analytics",
       "color": "#FF6B6B"
     },
     {
       "icon": "fas fa-project-diagram",
-      "text": "5+ Projects Completed",
+      "text": "Healthcare & Enterprise Data",
       "color": "#4ECDC4"
     },
     {
       "icon": "fas fa-code",
-      "text": "Technical Expertise",
+      "text": "Dashboards, ETL & KPI Reporting",
       "color": "#FFE66D"
     }
   ],
   "cta": {
     "buttons": [
       {
-        "text": "Get In Touch",
+        "text": "Contact Me",
         "href": "#contact",
         "type": "primary",
-        "external": false
+        "external": false,
+        "icon": "fas fa-envelope"
       },
       {
-        "text": "View My Work",
+        "text": "Explore Projects",
         "href": "#projects",
         "type": "secondary",
-        "external": false
+        "external": false,
+        "icon": "fas fa-chart-line"
       }
     ]
   },
   "socialLinks": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/gadesruthi02",
+      "icon": "fab fa-github"
+    },
     {
       "platform": "Email",
       "url": "mailto:gade.sruhthi02@gmail.com",

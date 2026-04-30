@@ -1,39 +1,34 @@
 {
   "_instructions": "Add your work experience here. Copy the experience object for each job.",
   "sectionTitle": "Professional Experience",
+  "subtitle": "Analytics work across healthcare and enterprise environments, with emphasis on reporting quality, operational visibility, and stakeholder adoption.",
   "experiences": [
     {
       "title": "Business Data Analyst",
       "company": "Humana",
+      "logo": "assets/logos/humana.svg",
       "period": "June 2025 – Current",
       "location": "",
-      "description": "Analyzed large-scale healthcare datasets including claims, enrollment, provider, and member data using SQL and Python to identify utilization trends, cost drivers, and care gaps. Built interactive dashboards and executive reports using Power BI and Tableau to track KPIs such as readmission rates, HEDIS measures, risk scores, and cost per member, improving data-driven decision-making by 35%. Partnered with product owners and clinical teams to translate business requirements into analytical solutions, reducing avoidable admissions by 18%. Performed advanced data validation and quality checks across claims, EHR, and pharmacy data. Conducted trend analysis and root cause investigations using SQL, Excel, and Python. Automated recurring reports and data pipelines using SQL scripts and Python workflows. Supported CMS, HEDIS, and internal audit reporting. Collaborated in Agile environments using Jira and Confluence.",
+      "description": "Healthcare analytics role focused on claims, enrollment, provider, member, EHR, and pharmacy data. Built reporting systems and executive dashboards that improved visibility into utilization, care gaps, cost drivers, and quality measures.",
       "responsibilities": [
-        "Analyzed large-scale healthcare datasets including claims, enrollment, provider, and member data using SQL and Python to identify utilization trends, cost drivers, and care gaps",
-        "Built interactive dashboards and executive reports using Power BI and Tableau to track KPIs such as readmission rates, HEDIS measures, risk scores, and cost per member, improving data-driven decision-making by 35%",
-        "Partnered with product owners and clinical teams to translate business requirements into analytical solutions, reducing avoidable admissions by 18%",
-        "Performed advanced data validation and quality checks across claims, EHR, and pharmacy data",
-        "Conducted trend analysis and root cause investigations using SQL, Excel, and Python",
-        "Automated recurring reports and data pipelines using SQL scripts and Python workflows",
-        "Supported CMS, HEDIS, and internal audit reporting",
-        "Collaborated in Agile environments using Jira and Confluence"
+        "Built Power BI and Tableau dashboards for readmission rates, HEDIS measures, risk scores, cost per member, and executive KPI tracking",
+        "Used SQL and Python to investigate utilization trends, cost drivers, care gaps, and operational performance patterns",
+        "Partnered with product owners and clinical teams to translate requirements into analytics solutions that reduced avoidable admissions by 18%",
+        "Automated recurring reporting workflows and supported CMS, HEDIS, audit, and Agile delivery documentation"
       ]
     },
     {
       "title": "Business Data Analyst",
       "company": "Mphasis",
+      "logo": "assets/logos/mphasis.svg",
       "period": "Jan 2021 – May 2023",
       "location": "",
-      "description": "Delivered data analytics solutions for enterprise clients across healthcare and financial services domains. Developed interactive Tableau and Power BI dashboards to track business KPIs and financial metrics, enabling 25% faster decision turnaround. Performed advanced SQL analysis and data modeling on large transactional datasets, reducing operational costs by 15%. Partnered with business users to document functional requirements and reporting specifications. Built automated ETL workflows using Alteryx and SSIS to consolidate data from disparate systems. Conducted trend analysis and root cause investigations to identify performance gaps, improving SLA adherence by 18%. Supported Agile delivery teams through sprint reviews and UAT cycles. Created detailed documentation, dashboards, and data dictionaries.",
+      "description": "Delivered analytics and reporting solutions for enterprise clients in healthcare and financial services. Focused on KPI reporting, SQL analysis, ETL workflows, requirements documentation, and business performance insights.",
       "responsibilities": [
-        "Delivered data analytics solutions for enterprise clients across healthcare and financial services domains",
-        "Developed interactive Tableau and Power BI dashboards to track business KPIs and financial metrics, enabling 25% faster decision turnaround",
-        "Performed advanced SQL analysis and data modeling on large transactional datasets, reducing operational costs by 15%",
-        "Partnered with business users to document functional requirements and reporting specifications",
-        "Built automated ETL workflows using Alteryx and SSIS to consolidate data from disparate systems",
-        "Conducted trend analysis and root cause investigations to identify performance gaps, improving SLA adherence by 18%",
-        "Supported Agile delivery teams through sprint reviews and UAT cycles",
-        "Created detailed documentation, dashboards, and data dictionaries"
+        "Developed Tableau and Power BI dashboards that improved KPI visibility and enabled 25% faster decision turnaround",
+        "Performed SQL analysis and data modeling on large transactional datasets, contributing to 15% operational cost reduction",
+        "Built automated ETL workflows with Alteryx and SSIS to consolidate data across business systems",
+        "Supported Agile teams through sprint reviews, UAT cycles, reporting specifications, data dictionaries, and stakeholder documentation"
       ]
     }
   ]
