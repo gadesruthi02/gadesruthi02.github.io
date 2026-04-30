@@ -1,0 +1,26 @@
+{
+  "_instructions": "Site-wide configuration and meta tags.",
+  "title": "Sruthi Gade | BUSINESS DATA ANALYST",
+  "description": "Sruthi Gade - BUSINESS DATA ANALYST | Portfolio",
+  "keywords": "BUSINESS DATA ANALYST, Portfolio, Sruthi Gade",
+  "author": "Sruthi Gade",
+  "siteName": "Sruthi Gade",
+  "siteTitle": "Sruthi Gade | BUSINESS DATA ANALYST",
+  "meta": {
+    "title": "Sruthi Gade | BUSINESS DATA ANALYST",
+    "description": "Sruthi Gade - BUSINESS DATA ANALYST | Portfolio",
+    "author": "Sruthi Gade",
+    "keywords": "BUSINESS DATA ANALYST, Portfolio, Sruthi Gade"
+  },
+  "branding": {
+    "name": "Sruthi Gade",
+    "tagline": "BUSINESS DATA ANALYST",
+    "logo": "/logo.png"
+  },
+  "settings": {
+    "year": 2026,
+    "enableAnimations": true,
+    "enableParticles": true,
+    "navbarScrollEffect": true
+  }
+}

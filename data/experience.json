@@ -1,0 +1,40 @@
+{
+  "_instructions": "Add your work experience here. Copy the experience object for each job.",
+  "sectionTitle": "Professional Experience",
+  "experiences": [
+    {
+      "title": "Business Data Analyst",
+      "company": "Humana",
+      "period": "June 2025 – Current",
+      "location": "",
+      "description": "Analyzed large-scale healthcare datasets including claims, enrollment, provider, and member data using SQL and Python to identify utilization trends, cost drivers, and care gaps. Built interactive dashboards and executive reports using Power BI and Tableau to track KPIs such as readmission rates, HEDIS measures, risk scores, and cost per member, improving data-driven decision-making by 35%. Partnered with product owners and clinical teams to translate business requirements into analytical solutions, reducing avoidable admissions by 18%. Performed advanced data validation and quality checks across claims, EHR, and pharmacy data. Conducted trend analysis and root cause investigations using SQL, Excel, and Python. Automated recurring reports and data pipelines using SQL scripts and Python workflows. Supported CMS, HEDIS, and internal audit reporting. Collaborated in Agile environments using Jira and Confluence.",
+      "responsibilities": [
+        "Analyzed large-scale healthcare datasets including claims, enrollment, provider, and member data using SQL and Python to identify utilization trends, cost drivers, and care gaps",
+        "Built interactive dashboards and executive reports using Power BI and Tableau to track KPIs such as readmission rates, HEDIS measures, risk scores, and cost per member, improving data-driven decision-making by 35%",
+        "Partnered with product owners and clinical teams to translate business requirements into analytical solutions, reducing avoidable admissions by 18%",
+        "Performed advanced data validation and quality checks across claims, EHR, and pharmacy data",
+        "Conducted trend analysis and root cause investigations using SQL, Excel, and Python",
+        "Automated recurring reports and data pipelines using SQL scripts and Python workflows",
+        "Supported CMS, HEDIS, and internal audit reporting",
+        "Collaborated in Agile environments using Jira and Confluence"
+      ]
+    },
+    {
+      "title": "Business Data Analyst",
+      "company": "Mphasis",
+      "period": "Jan 2021 – May 2023",
+      "location": "",
+      "description": "Delivered data analytics solutions for enterprise clients across healthcare and financial services domains. Developed interactive Tableau and Power BI dashboards to track business KPIs and financial metrics, enabling 25% faster decision turnaround. Performed advanced SQL analysis and data modeling on large transactional datasets, reducing operational costs by 15%. Partnered with business users to document functional requirements and reporting specifications. Built automated ETL workflows using Alteryx and SSIS to consolidate data from disparate systems. Conducted trend analysis and root cause investigations to identify performance gaps, improving SLA adherence by 18%. Supported Agile delivery teams through sprint reviews and UAT cycles. Created detailed documentation, dashboards, and data dictionaries.",
+      "responsibilities": [
+        "Delivered data analytics solutions for enterprise clients across healthcare and financial services domains",
+        "Developed interactive Tableau and Power BI dashboards to track business KPIs and financial metrics, enabling 25% faster decision turnaround",
+        "Performed advanced SQL analysis and data modeling on large transactional datasets, reducing operational costs by 15%",
+        "Partnered with business users to document functional requirements and reporting specifications",
+        "Built automated ETL workflows using Alteryx and SSIS to consolidate data from disparate systems",
+        "Conducted trend analysis and root cause investigations to identify performance gaps, improving SLA adherence by 18%",
+        "Supported Agile delivery teams through sprint reviews and UAT cycles",
+        "Created detailed documentation, dashboards, and data dictionaries"
+      ]
+    }
+  ]
+}
